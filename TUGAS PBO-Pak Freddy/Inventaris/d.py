@@ -39,6 +39,9 @@ class Dashboard:
         # add menus to the menubar
         self.menubar.add_cascade(label="START", menu=self.file_menu)
         
+        # Menampilkan judul di tengah dashboard
+        judul_label = tk.Label(self.root, text="APLIKASI INVENTARIS KANTOR", font=("Wide Latin", 12), pady=10, bg="light blue",fg='blue')
+        judul_label.pack(side=tk.TOP, fill=tk.X)
 
     def new_window(self, number, _class):
         new = tk.Toplevel(self.root)
